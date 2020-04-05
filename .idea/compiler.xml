@@ -10,4 +10,9 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mmall-server" options="-extdirs $PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+    </option>
+  </component>
 </project>
