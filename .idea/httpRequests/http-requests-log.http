@@ -1,0 +1,24 @@
+GET http://localhost:8899/manage/category/set_category_name.do
+
+###
+
+POST http://localhost:8899/mmall_server_war/user/login.do
+
+<> 2020-04-14T083826.200.json
+
+###
+
+GET http://localhost:8899/mmall_server_war/manage/category/set_category_name.do
+
+<> 2020-04-14T083719.200.json
+
+###
+
+GET http://localhost:8899/mmall_server_war/manage/category/set_category_name.do
+
+###
+
+GET http://localhost:8899/manage/category/set_category_name.do
+
+###
+
