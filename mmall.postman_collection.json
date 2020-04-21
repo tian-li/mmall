@@ -1,0 +1,1046 @@
+{
+	"info": {
+		"_postman_id": "7374fc06-6be7-4b8b-9192-48997a8aea43",
+		"name": "mmall",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "login.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/login.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"login.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/logout.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"logout.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/register.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"register.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check_valid.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "str",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "email",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/check_valid.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"check_valid.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_user_info.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/get_user_info.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"get_user_info.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget_get_question.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/forget_get_question.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"forget_get_question.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_information.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@admin.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "18500875969",
+									"type": "text"
+								},
+								{
+									"key": "question",
+									"value": "密保问题",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "密保答案",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/update_information.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"update_information.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget_check_answer.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "question",
+									"value": "密保问题",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "密保答案",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/forget_check_answer.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"forget_check_answer.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget_reset_password.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "passwordNew",
+									"value": "admin111",
+									"type": "text"
+								},
+								{
+									"key": "forgetToken",
+									"value": "38c27d75-e4f1-4b02-9bc8-4bf07a1fa588",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/forget_reset_password.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"forget_reset_password.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset_password.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "passwordNew",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "passwordOld",
+									"value": "admin111",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/reset_password.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"reset_password.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_information.do",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/user/get_information.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"user",
+								"get_information.do"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "product/list.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/product/list.do?orderBy=price_asc&keyword=i",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"product",
+								"list.do"
+							],
+							"query": [
+								{
+									"key": "orderBy",
+									"value": "price_asc"
+								},
+								{
+									"key": "categoryId",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "keyword",
+									"value": "i"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product/detail.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/product/detail.do?productId=28",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"product",
+								"detail.do"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "28"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "product",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "manage",
+			"item": [
+				{
+					"name": "category",
+					"item": [
+						{
+							"name": "get_category.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/category/get_category.do?categoryId=100001",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"category",
+										"get_category.do"
+									],
+									"query": [
+										{
+											"key": "categoryId",
+											"value": "100001"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add_category.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/category/add_category.do?parentId=0&categoryName=新增子分类",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"category",
+										"add_category.do"
+									],
+									"query": [
+										{
+											"key": "parentId",
+											"value": "0"
+										},
+										{
+											"key": "categoryName",
+											"value": "新增子分类"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "set_category_name.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/category/set_category_name.do?categoryId=100034&categoryName=修改分类",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"category",
+										"set_category_name.do"
+									],
+									"query": [
+										{
+											"key": "categoryId",
+											"value": "100034"
+										},
+										{
+											"key": "categoryName",
+											"value": "修改分类"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get_deep_category.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/category/get_deep_category.do?categoryId=100001",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"category",
+										"get_deep_category.do"
+									],
+									"query": [
+										{
+											"key": "categoryId",
+											"value": "100001"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "manage/product/list.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/product/list.do",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"product",
+										"list.do"
+									],
+									"query": [
+										{
+											"key": "pageNum",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/product/save.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/product/save.do?categoryId=100002&name=iPhone 12 Pro&subtitle=the most Pro iPhone ever&detail=Pro as you go&price=1000&stock=100&status=1&id=32",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"product",
+										"save.do"
+									],
+									"query": [
+										{
+											"key": "categoryId",
+											"value": "100002"
+										},
+										{
+											"key": "name",
+											"value": "iPhone 12 Pro"
+										},
+										{
+											"key": "subtitle",
+											"value": "the most Pro iPhone ever"
+										},
+										{
+											"key": "mainImage",
+											"value": "sss.jpg",
+											"disabled": true
+										},
+										{
+											"key": "subImages",
+											"value": "test.jpg",
+											"disabled": true
+										},
+										{
+											"key": "detail",
+											"value": "Pro as you go"
+										},
+										{
+											"key": "price",
+											"value": "1000"
+										},
+										{
+											"key": "stock",
+											"value": "100"
+										},
+										{
+											"key": "status",
+											"value": "1"
+										},
+										{
+											"key": "id",
+											"value": "32"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/product/detail.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/product/detail.do?productId=27",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"product",
+										"detail.do"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "27"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/product/set_sale_status.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/product/set_sale_status.do?productId=27&status=3",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"product",
+										"set_sale_status.do"
+									],
+									"query": [
+										{
+											"key": "productId",
+											"value": "27"
+										},
+										{
+											"key": "status",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/product/search.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/product/search.do?productName=美的",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"product",
+										"search.do"
+									],
+									"query": [
+										{
+											"key": "productName",
+											"value": "美的"
+										},
+										{
+											"key": "productId",
+											"value": "280",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "manage/user/login.do",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/user/login.do",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"user",
+										"login.do"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "add.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/add.do?productId=31&count=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"add.do"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "31"
+								},
+								{
+									"key": "count",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/update.do?productId=31&count=30",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"update.do"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "31"
+								},
+								{
+									"key": "count",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_product.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/delete_product.do?productIds=999,1",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"delete_product.do"
+							],
+							"query": [
+								{
+									"key": "productIds",
+									"value": "999,1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "un_select.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/un_select.do?productId=27",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"un_select.do"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "27"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "un_select_all.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/un_select_all.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"un_select_all.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select_all.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/select_all.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"select_all.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_cart_product_count.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/get_cart_product_count.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"get_cart_product_count.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/select.do?productId=27",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"select.do"
+							],
+							"query": [
+								{
+									"key": "productId",
+									"value": "27"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/cart/list.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"cart",
+								"list.do"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
