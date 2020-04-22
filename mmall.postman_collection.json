@@ -1040,6 +1040,208 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "shipping",
+			"item": [
+				{
+					"name": "shipping/add.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/shipping/add.do?receiverName=李天&receiverPhone=3144894321&receiverMobile=15082979536&receiverProvince=河南&receiverCity=商丘市&receiverAddress=华夏路&receiverZip=46077",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"shipping",
+								"add.do"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "123",
+									"description": "后台不会使用这个userId，而是会从session中获取",
+									"disabled": true
+								},
+								{
+									"key": "receiverName",
+									"value": "李天"
+								},
+								{
+									"key": "receiverPhone",
+									"value": "3144894321"
+								},
+								{
+									"key": "receiverMobile",
+									"value": "15082979536"
+								},
+								{
+									"key": "receiverProvince",
+									"value": "河南"
+								},
+								{
+									"key": "receiverCity",
+									"value": "商丘市"
+								},
+								{
+									"key": "receiverAddress",
+									"value": "华夏路"
+								},
+								{
+									"key": "receiverZip",
+									"value": "46077"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shipping/delete.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/shipping/delete.do?shippingId=31",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"shipping",
+								"delete.do"
+							],
+							"query": [
+								{
+									"key": "shippingId",
+									"value": "31"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shipping/update.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/shipping/update.do?id=30&receiverName=李天&receiverPhone=110&receiverMobile=119&receiverProvince=河南省&receiverCity=开封市&receiverDistrict=古城区&receiverAddress=河南大学&receiverZip=100000",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"shipping",
+								"update.do"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "30"
+								},
+								{
+									"key": "receiverName",
+									"value": "李天"
+								},
+								{
+									"key": "receiverPhone",
+									"value": "110"
+								},
+								{
+									"key": "receiverMobile",
+									"value": "119"
+								},
+								{
+									"key": "receiverProvince",
+									"value": "河南省"
+								},
+								{
+									"key": "receiverCity",
+									"value": "开封市"
+								},
+								{
+									"key": "receiverDistrict",
+									"value": "古城区"
+								},
+								{
+									"key": "receiverAddress",
+									"value": "河南大学"
+								},
+								{
+									"key": "receiverZip",
+									"value": "100000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shipping/select.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/shipping/select.do?shippingId=30",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"shipping",
+								"select.do"
+							],
+							"query": [
+								{
+									"key": "shippingId",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "shipping/list.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/shipping/list.do?pageNum=2&pageSize=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"shipping",
+								"list.do"
+							],
+							"query": [
+								{
+									"key": "pageNum",
+									"value": "2"
+								},
+								{
+									"key": "pageSize",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
