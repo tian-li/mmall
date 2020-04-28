@@ -1242,6 +1242,64 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "pay.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/pay.do?orderNo=1492091083720",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"pay.do"
+							],
+							"query": [
+								{
+									"key": "orderNo",
+									"value": "1492091083720"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "query_order_pay_status.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/query_order_pay_status.do?orderNo=1492091083720",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"query_order_pay_status.do"
+							],
+							"query": [
+								{
+									"key": "orderNo",
+									"value": "1492091083720"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
