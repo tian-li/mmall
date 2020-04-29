@@ -813,6 +813,115 @@
 					],
 					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
+				},
+				{
+					"name": "order",
+					"item": [
+						{
+							"name": "manage/order/list.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/order/list.do",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"order",
+										"list.do"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/order/detail.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/order/detail.do?orderNo=1492091089794",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"order",
+										"detail.do"
+									],
+									"query": [
+										{
+											"key": "orderNo",
+											"value": "1492091089794"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/order/send_goods.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/order/send_goods.do?orderNo=1492091089794",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"order",
+										"send_goods.do"
+									],
+									"query": [
+										{
+											"key": "orderNo",
+											"value": "1492091089794"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "manage/order/search.do",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8899/mmall_server_war/manage/order/search.do?orderNo=1588121680874",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"mmall_server_war",
+										"manage",
+										"order",
+										"search.do"
+									],
+									"query": [
+										{
+											"key": "orderNo",
+											"value": "1588121680874"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -826,7 +935,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8899/mmall_server_war/cart/add.do?productId=31&count=10",
+							"raw": "localhost:8899/mmall_server_war/cart/add.do?productId=31&count=1",
 							"host": [
 								"localhost"
 							],
@@ -843,7 +952,7 @@
 								},
 								{
 									"key": "count",
-									"value": "10"
+									"value": "1"
 								}
 							]
 						}
@@ -1267,6 +1376,124 @@
 									"key": "orderNo",
 									"value": "1492091083720"
 								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detail.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/detail.do?orderNo=1588121680874",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"detail.do"
+							],
+							"query": [
+								{
+									"key": "orderNo",
+									"value": "1588121680874"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/cancel.do?orderNo=1588121680874",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"cancel.do"
+							],
+							"query": [
+								{
+									"key": "orderNo",
+									"value": "1588121680874"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/list.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"list.do"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/create.do?shippingId=30",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"create.do"
+							],
+							"query": [
+								{
+									"key": "shippingId",
+									"value": "30"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_order_cart_product.do",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8899/mmall_server_war/order/get_order_cart_product.do",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"mmall_server_war",
+								"order",
+								"get_order_cart_product.do"
 							]
 						}
 					},
